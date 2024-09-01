@@ -26,3 +26,19 @@ function remember(str) {
 }
 
 // or
+
+function remember(str) {
+  let result = [];
+  let counts = {};
+  
+  for (let i = 0; i < str.length; i++) {
+    let c = str[i];
+    counts[c] = (counts.hasOwnProperty(c) ? counts[c] : 0) + 1;
+    
+    if (counts[c] === 2) {
+      result.push(c);
+    }
+  }
+  
+  return result;
+}
