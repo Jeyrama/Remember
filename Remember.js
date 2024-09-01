@@ -18,3 +18,9 @@ Examples:
 
 
 // Solution
+
+function remember(str) {  
+  return str.split('')
+  .filter((item,i,allItems) => i !== allItems.indexOf(item))
+  .filter((item,i,allItems) => i === allItems.indexOf(item));
+}
