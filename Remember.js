@@ -15,3 +15,6 @@ Examples:
   remember("pippi") => returns ["p","i"]   // show "p" only once
   remember('Pippi') => returns ["p","i"]   // "p" is repeated first
 */
+
+
+// Solution
