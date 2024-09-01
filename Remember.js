@@ -24,3 +24,5 @@ function remember(str) {
   .filter((item,i,allItems) => i !== allItems.indexOf(item))
   .filter((item,i,allItems) => i === allItems.indexOf(item));
 }
+
+// or
